@@ -7,7 +7,7 @@ form.addEventListener("submit", (ev) => {
   if (email.value === "" || password.value === "") {
     alert("Please fill all fields");
   } else {
-    let object = {
+    const object = {
       email: email.value,
       password: password.value,
     };
