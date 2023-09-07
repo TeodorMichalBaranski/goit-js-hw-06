@@ -19,6 +19,23 @@ images.forEach((el) => {
   let liContent = `<img src="${el.url}" alt="${el.alt}" width=200>`;
   gallery.insertAdjacentHTML("beforeend", liContent);
 });
+
+//METHOD WITH MAP() AND INSERTADJACTMENTHTML
+// const gallery = document.querySelector(".gallery");
+// const li = images.map((el) => {
+//   return `<li><img src="${el.url}" alt="${el.alt}" width=200 ></li>`;
+// });
+
+// gallery.insertAdjacentHTML("beforeend", li.join(" "));
+
+//USING arr.MAP
+// const gallery = document.querySelector(".gallery");
+// const arrImages = images.map((el) => {
+//   let li = document.createElement("li");
+//   li.innerHTM = `<img src="${el.url}" alt="${el.alt}" width=200>`;
+//   return li;
+// });
+// gallery.append(...arrImages);
 //---------------------
 //
 //

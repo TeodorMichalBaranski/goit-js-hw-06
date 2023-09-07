@@ -2,6 +2,7 @@ const input = document.querySelector("#validation-input");
 const length = input.getAttribute("data-length");
 console.log(length);
 console.log(typeof length);
+
 input.addEventListener("blur", () => {
   let text = input.value.length;
   console.log(`Length of text in input is ${text}`);
